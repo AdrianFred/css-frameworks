@@ -1,0 +1,20 @@
+$dark: #d3d3d3;
+$danger: #63666a;
+$primary: #4681f4;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$theme-colors: (
+  "primary": $pink-500,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+.content {
+  min-height: 90vh;
+}
