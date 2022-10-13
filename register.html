@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gettr Home Page</title>
+    <title>Gettr | Register</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="">
@@ -45,23 +45,27 @@
     <!-- Text form -->
     <div class="row m-0">
       <div class="col-xl-4 offset-xl-4 mt-4">
-        <form id="login-form">
+        <form id="register-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" required class="form-control" id="name" />
+          </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" required class="form-control" id="email" aria-describedby="emailHelp" />
-            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" required class="form-control" id="password" />
           </div>
           <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="check" />
-            <label class="form-check-label" for="check">Check me out</label>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" class="btn btn-primary mb-3">Submit</button>
+          <button type="submit" class="btn btn-primary mb-3" id="register-button">Register</button>
         </form>
-        <a href="/register.html">Dont have an Account? Click here to make one</a>
+        <a href="/login.html">Have an Account? Click here to Login</a>
       </div>
     </div>
 
@@ -73,6 +77,6 @@
       </div>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="javascript/login.js"></script>
+    <script src="/javascript/register.js"></script>
   </body>
 </html>
