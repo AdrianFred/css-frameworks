@@ -15,10 +15,14 @@ const login = async (data) => {
       sessionStorage.removeItem("token");
       if (document.getElementById("check").checked) {
         localStorage.setItem("token", data.accessToken);
+        localStorage.setItem("name", data.name);
+        localStorage.setItem("avatar", data.avatar);
       } else {
         sessionStorage.setItem("token", data.accessToken);
+        sessionStorage.setItem("name", data.name);
+        sessionStorage.setItem("avatar", data.avatar);
       }
-      window.location.href = "/profile.html";
+      window.location.href = "../pages/profile.html";
     } else {
       alert("Invalid Credentials");
     }
