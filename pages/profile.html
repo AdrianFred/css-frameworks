@@ -32,7 +32,8 @@
               <a class="nav-link active" href="profile.html">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html" tabindex="-1">Login</a>
+              <a class="nav-link" href="/pages/login.html" tabindex="-1" id="login">Login</a>
+              <a class="nav-link" href="/pages/login.html" tabindex="-1" id="logout" style="none">Logout</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -83,29 +84,11 @@
       </div>
     </div>
     <!-- Recent post -->
+
     <div class="row p-0 m-0">
       <div class="col-xl-3 offset-xl-3"><h3>Recent post</h3></div>
       <div class="col-12 gx-5">
-        <div class="col-xl-6 offset-xl-3 mt-4 bg-dark rounded p-2">
-          <div class=""><h3>@HunterMan2103</h3></div>
-          <div class="">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque ipsum non purus euismod suscipit. Praesent ante
-              mauris, malesuada in justo ac, aliquam maximus lectus. Ut in auctor risus. Nam laoreet mauris quis nibh varius, ac gravida eros
-              vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-6 offset-xl-3 mt-4 bg-dark rounded p-2">
-          <div class=""><h3>@HunterMan2103</h3></div>
-          <div class="">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque ipsum non purus euismod suscipit. Praesent ante
-              mauris, malesuada in justo ac, aliquam maximus lectus. Ut in auctor risus. Nam laoreet mauris quis nibh varius, ac gravida eros
-              vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per.
-            </p>
-          </div>
-        </div>
+        <div id="recents"></div>
       </div>
     </div>
     <!-- Post -->
