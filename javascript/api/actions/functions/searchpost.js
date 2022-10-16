@@ -1,5 +1,14 @@
 import { searchUrl } from "/javascript/api/actions/urls/url.js";
 
+/**
+ *
+ * @param {string} Word || The word you want to search for
+ * @param {string} post.id || The id of the post you searched for
+ * @param {string} post.author.name || The name of the author of the post you searched for
+ * @param {string} post.author.avatar || The avatar of the author of the post you searched for
+ * @param {string} post.body || The body of the post you searched for
+ */
+
 const searchPost = async (Word) => {
   const token = localStorage.getItem("token") || sessionStorage.getItem("token");
   const response = await fetch(searchUrl, {

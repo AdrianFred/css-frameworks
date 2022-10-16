@@ -1,6 +1,10 @@
 let params = "limit=10&_author=true";
 let url = `https://nf-api.onrender.com/api/v1/social/posts?${params}`;
 
+/**
+ * @param {object} getPosts || sends a get method to obtain posts
+ */
+
 const getPosts = async () => {
   const token = localStorage.getItem("token") || sessionStorage.getItem("token");
   const response = await fetch(url, {
