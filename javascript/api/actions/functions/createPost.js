@@ -18,7 +18,6 @@ const createPost = async (data) => {
 
 document.getElementById("submitpost").addEventListener("submit", function (e) {
   // e.preventDefault();
-  console.log("hello");
   createPost({
     title: document.getElementById("title").value,
     body: document.getElementById("body").value,

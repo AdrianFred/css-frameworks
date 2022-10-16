@@ -13,7 +13,6 @@ const getPosts = async () => {
 
   const test = response.json();
   test.then((data) => {
-    console.log(data);
     document.getElementById("post-section").innerHTML = "";
     data.forEach((post) => {
       if (post.author.avatar == "") {
