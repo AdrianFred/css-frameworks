@@ -18,4 +18,5 @@ document.getElementById("register-form").addEventListener("submit", function (e)
     email: document.getElementById("email").value,
     password: document.getElementById("password").value,
   });
+  window.location.href = "../pages/login.html";
 });
