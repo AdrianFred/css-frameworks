@@ -1,12 +1,3 @@
-/**
- * @param {string} id - The id of the post
- * @param {string} token - The token of the user
- * @param {string} url - The url of the api
- * @param {string} image - The image of the user
- * @param {string} name - The name of the user
- * @param id - The id of the post
- */
-
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const token = localStorage.getItem("token") || sessionStorage.getItem("token");

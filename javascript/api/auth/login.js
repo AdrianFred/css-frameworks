@@ -1,7 +1,7 @@
-const url = "https://nf-api.onrender.com/api/v1/social/auth/login";
+import { loginUrl } from "../actions/urls/url.js";
 
 const login = async (data) => {
-  const response = await fetch(url, {
+  const response = await fetch(loginUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

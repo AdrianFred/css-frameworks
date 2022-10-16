@@ -1,7 +1,7 @@
-const url = "https://nf-api.onrender.com/api/v1/social/auth/register";
+import { registerUrl } from "../actions/urls/url.js";
 
 const register = async (data) => {
-  const response = await fetch(url, {
+  const response = await fetch(registerUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -1,8 +1,8 @@
-const url3 = "https://nf-api.onrender.com/api/v1/social/posts";
+import { postUrl } from "../urls/url.js";
 
 const createPost = async (data) => {
   const token = localStorage.getItem("token") || sessionStorage.getItem("token");
-  const response = await fetch(url3, {
+  const response = await fetch(postUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
