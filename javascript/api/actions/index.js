@@ -1,5 +1,5 @@
-import searchPost from "./functions/searchpost.js";
-import getPosts from "./functions/getposts.js";
+import searchPost from "/javascript/api/actions/functions/searchpost.js";
+import getPosts from "/javascript/api/actions/functions/getPosts.js";
 
 const url2 = "https://nf-api.onrender.com/api/v1/social/posts?_author=true";
 const yourName = localStorage.getItem("name") || sessionStorage.getItem("name");

@@ -1,8 +1,8 @@
-const url2 = "https://nf-api.onrender.com/api/v1/social/posts?_author=true&limit=5000";
+import { searchUrl } from "/javascript/api/actions/urls/url.js";
 
 const searchPost = async (Word) => {
   const token = localStorage.getItem("token") || sessionStorage.getItem("token");
-  const response = await fetch(url2, {
+  const response = await fetch(searchUrl, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

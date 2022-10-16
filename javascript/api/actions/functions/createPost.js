@@ -1,4 +1,12 @@
-import { postUrl } from "../urls/url.js";
+import { postUrl } from "/javascript/api/actions/urls/url.js";
+
+/**
+ *
+ * @param {Object} data
+ * @param {String} data.title
+ * @param {String} data.body
+ * @param {String} data.Authorization
+ */
 
 const createPost = async (data) => {
   const token = localStorage.getItem("token") || sessionStorage.getItem("token");
