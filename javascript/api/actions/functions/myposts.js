@@ -2,6 +2,10 @@ import { searchUrl } from "/javascript/api/actions/urls/url.js";
 const names = localStorage.getItem("name") || sessionStorage.getItem("name");
 const token = localStorage.getItem("token") || sessionStorage.getItem("token");
 
+/**
+ * @param {object} myPosts || sends a get method to obtain posts made by the logged in user
+ */
+
 const myPosts = async () => {
   const response = await fetch(searchUrl, {
     method: "GET",

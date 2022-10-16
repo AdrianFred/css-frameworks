@@ -29,7 +29,7 @@ const getPosts = async () => {
               <div class="row border p-2 rounded bg-dark mt-4">
                 <div class="col-xl-2 col-sm-4"><img class="img-fluid rounded" src="${image}" alt="Profile picture" /></div>
                 <div class="col-xl-10 col-sm-8 gx-5">
-                  <div class="row mt-2"><h3 id=name>${post.author.name}</h3></div>
+                  <div class="row mt-2"><h3 id=name>@${post.author.name}</h3></div>
                   <div class="row"><h4>${post.title}</h4></div>
                   <div class="row">
                     <p>
