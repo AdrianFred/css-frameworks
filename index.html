@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gettr Home Page</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </head>
   <body class="">
     <!-- Navigation -->
@@ -43,47 +44,42 @@
       </div>
     </nav>
     <!-- Text form -->
-    <div class="content">
-      <div class="row mt-5 m-0">
-        <div class="col-8 offset-2">
-          <form action="">
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Submit a new post</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
-            </div>
-            <div class="d-flex justify-content-center">
-              <button class="btn btn-primary" type="submit">Submit Post</button>
-            </div>
-          </form>
-          <!-- Recent posts -->
-          <h2>Recents</h2>
-
-          <div class="row border p-2 rounded bg-dark">
-            <div class="col-xl-2 col-sm-4"><img class="img-fluid rounded" src="/images/ambassador-g9e34ca095_640.jpg" alt="Profile picture" /></div>
-            <div class="col-xl-10 col-sm-8 gx-5">
-              <div class="row mt-2"><h3>@HunterMan2103</h3></div>
-              <div class="row">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque ipsum non purus euismod suscipit. Praesent ante
-                  mauris, malesuada in justo ac, aliquam maximus lectus. Ut in auctor risus. Nam laoreet mauris quis nibh varius, ac gravida eros
-                  vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per.
-                </p>
-              </div>
-            </div>
+    <div class="container mt-4">
+      <div class="row">
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Submit a new post</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
           </div>
-          <div class="row border p-2 rounded mt-4 bg-dark">
-            <div class="col-xl-2 col-sm-4"><img class="img-fluid rounded" src="/images/ambassador-g9e34ca095_640.jpg" alt="Profile picture" /></div>
-            <div class="col-xl-10 col-sm-8 gx-5">
-              <div class="row mt-2"><h3>@HunterMan2103</h3></div>
-              <div class="row">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque ipsum non purus euismod suscipit. Praesent ante
-                  mauris, malesuada in justo ac, aliquam maximus lectus. Ut in auctor risus. Nam laoreet mauris quis nibh varius, ac gravida eros
-                  vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per.
-                </p>
-              </div>
-            </div>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary" type="submit">Submit Post</button>
           </div>
+        </form>
+      </div>
+    </div>
+    <!-- Posts Section  -->
+    <div class="container mt-4">
+      <h1>Recents</h1>
+      <div class="row justify-content-center border p-2 mx-3 mx-sm-0 rounded bg-dark">
+        <div class="col-12 col-sm-2"><img src="/images/ambassador-g9e34ca095_640.jpg" alt="" class="img-fluid rounded" /></div>
+        <div class="col mt-3 mt-sm-0">
+          <h3>@Hunter2103</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque ipsum non purus euismod suscipit. Praesent ante mauris,
+            malesuada in justo ac, aliquam maximus lectus. Ut in auctor risus. Nam laoreet mauris quis nibh varius, ac gravida eros vulputate. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center border p-2 mx-3 mx-sm-0 mt-4 rounded bg-dark">
+        <div class="col-12 col-sm-2"><img src="/images/ambassador-g9e34ca095_640.jpg" alt="" class="img-fluid rounded" /></div>
+        <div class="col mt-3 mt-sm-0">
+          <h3>@Hunter2103</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque ipsum non purus euismod suscipit. Praesent ante mauris,
+            malesuada in justo ac, aliquam maximus lectus. Ut in auctor risus. Nam laoreet mauris quis nibh varius, ac gravida eros vulputate. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per.
+          </p>
         </div>
       </div>
     </div>
@@ -94,6 +90,5 @@
         <span class="">Gettr</span>
       </div>
     </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
